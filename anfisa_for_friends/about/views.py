@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 def description(request):
     template = 'about/description.html'
-    return render(request, template)
+    return render(request, template, {'current_page': 'about'})
